@@ -1,0 +1,43 @@
+.float{
+	position:fixed;
+	width:65px;
+	height:65px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:35px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+  box-shadow: .5rem .5rem .1rem #ccc;
+
+}
+.float:hover {
+	text-decoration: none;
+	color: #FFF;
+  background-color:#1ab152;
+    
+    animation: shake 1s infinite;
+
+  animation-iteration-count: infinite;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+.pulse{
+    animation: pulse-animation 2s infinite;
+}
+
+
+
+@keyframes shake{
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
