@@ -85,7 +85,6 @@ body {
     max-width: 720px;
     max-height: 620px;
     min-height: 550px;
-    min-width: 500px;
   }
 
 .nav__links::after {
@@ -648,6 +647,13 @@ body {
 }
 
 /* Media queries */
+
+
+@media (max-width:1024px){
+    .img-nav-amr{
+      display: none;
+      }
+}
 
 @media (max-width:800px){
     .nav__menu{
