@@ -82,10 +82,10 @@ body {
 }
 
 .img-nav-amr{
-  width: 100%;
-  max-width: 720px;
-  max-height: 620px;
-  min-height: 550px;
+    width: 100%;
+    max-width: 720px;
+    max-height: 620px;
+    min-height: 550px;
 }
 
 .nav__links::after {
