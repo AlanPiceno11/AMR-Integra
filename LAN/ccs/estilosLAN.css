@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-html{
-    scroll-behavior: smooth;
-}
-
 :root {
     --padding-container: 100px 0;
     --color-title: #900C3F;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -59,7 +59,6 @@ body {
     font-weight: 300;
 }
 
-
 .nav__link {
     margin-left: auto;
     padding: 30px;
@@ -82,28 +81,28 @@ body {
 }
 
 .img-nav-amr{
-  width: 100%;
-  max-width: 720px;
-  max-height: 620px;
-  min-height: 450px
-}
+    width: 100%;
+    max-width: 720px;
+    max-height: 620px;
+    min-height: 450px
+  }
 
 .nav__links::after {
-   content: "";
-   width: 0;
-   height: 4px;
-   background-color: #e5e5f7;
-   position: absolute;
-   bottom: 0;
-   right: 50%;
-   transition: all .5s;
-   will-change: width;
-}
-
-.nav__links:hover::after {
-   width: 100%;
-   right: 0;
-}
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #e5e5f7;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+ }
+ 
+ .nav__links:hover::after {
+    width: 100%;
+    right: 0;
+ }
 
 .nav__menu {
     margin-left: 80%;
@@ -112,11 +111,12 @@ body {
     position: fixed;
     background-color: #000;
     border-radius: 10px;
+    z-index: 10;
 }
 
 .nav__img {
     display: block;
-    min-width: 40px;
+    width: 40px;
 }
 
 .nav__logo {
@@ -154,7 +154,7 @@ body {
 
 .cta {
     display: inline-block;
-    background-color: #900C3F;
+    background-color: #2091F9;
     justify-self: center;
     color: #fff;
     text-decoration: none;
@@ -162,11 +162,12 @@ body {
     border-radius: 32px;
 }
 
-/* About */
 
-.about {
-    text-align: center;
-}
+/* boton de ir hacia arriba */
+
+
+
+/* About */
 
 .lan-h{
     display: flex;
@@ -181,6 +182,10 @@ body {
 
 .lan-p{
     margin-left: 25px;
+}
+
+.about {
+    text-align: center;
 }
 
 .subtitle {
@@ -209,13 +214,13 @@ body {
     display: grid;
     gap: 1em;
     justify-items: center;
-    width: 260px;
+    width: 560px;
     overflow: hidden;
     margin: 0 auto;
 }
 
 .about__icon {
-    width: 40px;
+    width: 500px;
 }
 
 /* Knowledge */
@@ -230,7 +235,7 @@ body {
 
 
 .knowledge2 {
-    background-color: #900C3F;
+    background-color: #e5e5f7;
     background-image: radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#794141 0.5px, #e5e5f7 0.5px);
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
@@ -248,27 +253,18 @@ body {
     max-width: 500px;
 }
 
-.clientes{
-    width: 75vw;
-    max-width: 1000px;
-    min-width: 360px;
-    margin: auto;
-}
-
-.clientes__picture{
- width: 100%;
- border-radius: 15px;
- padding-bottom: 50px;
-}
-
-
-
 .knowledge__paragraph{
     line-height: 1.7;
     margin-bottom: 15px;
 }
 
 .knowledge__img{
+    width: 100%;
+    display: block;
+    filter: drop-shadow(-1px 2px 6px rgba(0, 0, 0, .8));
+}
+
+.knowledge__img2{
     width: 100%;
     display: block;
     border-radius: 15px;
@@ -392,13 +388,13 @@ body {
     cursor: pointer;
   }
   .tag-teal {
-    background-color: #900C3F;
+    background-color: #47bcd4;
   }
   .tag-purple {
-    background-color: #900C3F;
+    background-color: #5e76bf;
   }
   .tag-pink {
-    background-color: #900C3F;
+    background-color: #cd5b9f;
   }
   
   .card-body p {
@@ -469,7 +465,7 @@ body {
 }
 
 .testimony__course{
-    background-color: #900C3F;
+    background-color: royalblue;
     color: #fff;
     display: inline-block;
     padding: 5px;
@@ -577,10 +573,6 @@ body {
     padding-bottom: 60px;
 }
 
-.AMR-footer{
-   max-width: 320px;
-}
-
 .nav--footer{
     padding-bottom: 20px;
     display: grid;
@@ -645,7 +637,11 @@ body {
     width: 30px;
 }
 
-.tel-footer{
+.AMR-footer{
+    max-width: 320px;
+ }
+
+ .tel-footer{
     color: #fff;
     font-size: 1rem;
 }
@@ -730,11 +726,6 @@ body {
         justify-self: center;
     }
 
-    .clientes__picture{
-        grid-row: 1/2;
-        justify-self: center;
-    }
-
     .testimony__container{
         grid-template-columns: 30px 1fr 30px;
     }
@@ -782,7 +773,6 @@ body {
     }
 
 }
-
 
 @media (max-width:600px){
     .hero__title{
@@ -868,12 +858,7 @@ body {
         width: 100%;
         */
     }
-    .AMR-footer{
-        max-width: 320px;
-        margin: auto;
-     }
-
-     .lan-h{
+    .lan-h{
         width: 100%;
         text-align: center;
     }

@@ -1,0 +1,63 @@
+arrow-container{
+  z-index: -1;
+}
+
+.float-arrow{
+  position: fixed;
+	width:65px;
+	height:65px;
+	bottom:120px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:35px;
+	box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+}
+
+.remove{
+  display: none;
+}
+
+
+
+.float-arrow:hover {
+	text-decoration: none;
+	color: #FFF;
+  background-color:#FFF;
+    
+    animation: shake 1s infinite;
+
+  animation-iteration-count: infinite;
+}
+
+.my-float-arrow{
+	margin-top:16px;
+    width: 40px;
+}
+
+.pulse-arrow{
+    animation: pulse-animation 2s infinite;
+}
+
+
+
+@keyframes shake{
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+  .show{
+    z-index: 10;
+  }
+
+  @media (max-width:800px){
+    .float-arrow{
+      display: none;
+    }
+  }

@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMR-INTEGRA</title>
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/faviconamr.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/estilos.css" />
     <link rel="stylesheet" href="./css/whats.css">
+    <link rel="stylesheet" href="./css/flecha-arriba.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <meta name="theme-color" content="#2091F9" />
@@ -20,7 +21,6 @@
     />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://alexcgdesign.github.io" />
     <meta
       property="og:title"
       content="Página principal de la empresa AMR - Integra"
@@ -29,13 +29,7 @@
       property="og:description"
       content="Página principal de la empresa AMR - Integra."
     />
-    <meta
-      property="og:image"
-      content="https://alexcgdesign.github.io/images/css.jpg"
-    />
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.jordanalex.com/" />
     <meta
       property="twitter:title"
       content="Página principal de la empresa AMR - Integra"
@@ -43,10 +37,6 @@
     <meta
       property="twitter:description"
       content="Página principal de la empresa AMR - Integra."
-    />
-    <meta
-      property="twitter:image"
-      content="https://alexcgdesign.github.io/images/css.jpg"
     />
   </head>
 
@@ -56,28 +46,37 @@
     <a href="https://api.whatsapp.com/send?phone=3317751432&text=Hola, me gustaria Obtener más información" class="float pulse" target="_blank">
     <i class="fa fa-whatsapp my-float "></i>
     </a>
+  
+    <div class="arrow-container">
+    <a class="float-arrow pulse-arrow" href="#inicio">
+      <img src="../images/flecha-arriba.svg" class="my-float-arrow" alt="">
+      </a>
+    </div>
 
 <!-- Hero principal -->
-    <header class="hero">
+    <header class="hero" id="inicio">
       <nav class="nav container">
         <div class="nav__logo">
           <a href="./index.html">
-            <img src="./images/amr-nav2.png" alt="icono nav-bar" />
+            <img src="./images/amr-nav2.png" alt="icono nav-bar"  class="img-nav-amr"/>
           </a>
         </div>
 
         <ul class="nav__link nav__link--menu">
           <li class="nav__items">
-            <a href="./index.html" class="nav__links">Inicio</a>
+            <a href="#inicio" class="nav__links">Inicio</a>
           </li>
           <li class="nav__items">
-            <a href="#" class="nav__links">Acerca de</a>
+            <a href="#quienes" class="nav__links">¿Quienes somos?</a>
           </li>
           <li class="nav__items">
-            <a href="#" class="nav__links">Productos y servicios</a>
+            <a href="#productos" class="nav__links">Productos y servicios</a>
           </li>
           <li class="nav__items">
-            <a href="#" class="nav__links">Contacto</a>
+            <a href="#alianzas" class="nav__links">Alianzas</a>
+          </li>
+          <li class="nav__items">
+            <a href="#contacto" class="nav__links">Contacto</a>
           </li>
 
           <img src="./images/close.svg" class="nav__close" />
@@ -88,8 +87,8 @@
         </div>
       </nav>
 
-      <section class="hero__container container">
-        <h1 class="hero__title">AMR - Integra</h1>
+      <section class="hero__container container" id="">
+        <h1 class="hero__title">AMR - INTEGRA</h1>
         <p class="hero__paragraph">
           En AMR estamos conscientes del alto crecimiento y diversificaciones de
           red de datos tanto alámbricas como inalámbricas (Wi-Fi, Wireless Lan).
@@ -97,12 +96,13 @@
           función a las necesidades y requerimientos de nuestros clientes, para
           lo anterior contamos con plataforma de cableado estructurado.
         </p>
-        <a href="#" class="cta">Ver Productos y Servicios</a>
+        <a href="./LAN/index_lan.html" class="cta">¿Qué es una LAN?</a>
       </section>
     </header>
 
     <main>
-      <section class="container about">
+      <section class="container about" id="quienes">
+        <center><img src="./images/AMR_INTEGRA1.png" alt="Image" height="70" width="190" /></center><br>
         <h2 class="subtitle">¿Quiénes somos?</h2>
         <p class="about__paragraph">
           Desde sus inicios AMR - Integra se ha ocupado por satisfacer
@@ -118,33 +118,49 @@
 
         <div class="about__main">
           <article class="about__icons">
-            <img src="./images/cableado.svg" class="about__icon" />
+            <img src="./images/cable.png" class="about__icon" />
             <h3 class="about__title">Cableado estructurado</h3>
             <p class="about__paragrah">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              tempore porro eius facilis?
-            </p>
           </article>
 
           <article class="about__icons">
             <img src="./images/telefono.svg" class="about__icon" />
-            <h3 class="about__title">Telefonía</h3>
+            <h3 class="about__title">Telefonía IP</h3>
             <p class="about__paragrah">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              tempore porro eius facilis?
-            </p>
           </article>
 
           <article class="about__icons">
             <img src="./images/camara.svg" class="about__icon" />
-            <h3 class="about__title">Camaras de seguridad</h3>
+            <h3 class="about__title">CCTV IP</h3>
             <p class="about__paragrah">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-              tempore porro eius facilis?
-            </p>
           </article>
+
+          <article class="about__icons">
+            <img src="./images/rayo.png" class="about__icon" />
+            <h3 class="about__title">Tierras Fisicas</h3>
+            <p class="about__paragrah">
+          </article>
+
+          <article class="about__icons">
+            <img src="./images/wifi-router.png" class="about__icon" />
+            <h3 class="about__title">Firewalls / Routers</h3>
+            <p class="about__paragrah">
+          </article>
+
+          <article class="about__icons">
+            <img src="./images/switch.png" class="about__icon" />
+            <h3 class="about__title">Switches</h3>
+            <p class="about__paragrah">
+          </article>
+
         </div>
       </section>
+
+        <!-- Nuestros clientes -->
+       <div class="clientes">
+      <center><h2 class="subtitle">Clientes</h2></center>
+      <center><img src="./images/Clientes.png" alt="Image" class="clientes__picture" /></center><br>
+        </div> 
 
       <section class="knowledge">
         <div class="knowledge__container container">
@@ -156,11 +172,11 @@
               información, a través del compromiso profesional del capital
               humano.
             </p>
-            <a href="#" class="cta">boton1</a>
+            <!-- <a href="#" class="cta">boton1</a> -->
           </div>
 
           <figure class="knowledge__picture">
-            <img src="./images/mision.svg" class="knowledge__img" />
+            <img src="./images/Mision2.jpg" class="knowledge__img" />
           </figure>
         </div>
       </section>
@@ -173,148 +189,154 @@
               Ser el socio en productividad que el mercado corporativo reconozca
               y confíe en sus procesos de actualización tecnológica.
             </p>
-            <a href="#" class="cta">Boton1</a>
+            <!-- <a href="#" class="cta">Boton1</a> -->
           </div>
 
           <figure class="knowledge__picture">
-            <img src="./images/vision.svg" class="knowledge__img" />
+            <img src="./images/Vision2.jpg" class="knowledge__img" />
           </figure>
         </div>
       </section>
 
 <!-- Product -->
 
-      <section class="price container">
+      <section class="price container" id="productos">
+        <center><img src="./images/AMR_INTEGRA1.png" alt="Image" height="70" width="190" /></center><br><br>
         <center><h2 class="subtitle">Productos y servicios</h2></center>
         <div class="cardcon">
         <div class="card">
           <div class="card-header">
-            <img src="./images/amr-prin3.jpeg" alt="rover" />
+            <img src="./images/Cableado2.png" alt="rover" />
           </div>
           <div class="card-body">
-            <span class="tag tag-teal">Technology</span>
-            <h4>
-              Why is the Tesla Cybertruck designed the way it
-              is?
-            </h4>
+            <span class="tag tag-teal">Cableado Estructurado</span>
+            
             <br>
             <p>
-              An exploration into the truck's polarising design
+              AMR  cuenta con las Certificaciones requeridas por nuestros socios 
+             de negocio para las marcas de Panduit, en todo lo referente a 
+             implementación y puesta a punto de soluciones para Cableados Estructurados 
+             tanto de Voz como de Datos, con esto se garantiza la calidad de nuestros 
+             servicios.
             </p>
             <div class="user">
-              <img src="./images/amr-prin3.jpeg" alt="user" />
+              <img src="./images/cable.png" alt="user" />
               <div class="user-info">
-                <h5>July Dec</h5>
-                <small>2h ago</small>
+                <h5>Instalamos Fibra Óptica Multimodo y Monomodo y Cableado Ethernet 
+                    Cat 5e / Cat 6 / Cat 7
+                </h5>
+            
               </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <img src="./images/amr-prin3.jpeg" alt="rover" />
+            <img src="./images/telefonia.png" alt="rover" />
           </div>
           <div class="card-body">
-            <span class="tag tag-teal">Technology</span>
-            <h4>
-              Why is the Tesla Cybertruck designed the way it
-              is?
-            </h4>
+            <span class="tag tag-teal">Telefonía IP</span>
+          
+            <br>
             <p>
-              An exploration into the truck's polarising design
+              AMR ofrece el servidio de instalación de Telefonía IP de cualquier marca, por medio de conexión ethernet o 
+              vía inalambrica, con telefonos con patallas touch que permiten una fácil navegación y acceso a una amplia gama de funciones y 
+              características avanzadas de la Telefonía IP.
             </p>
             <div class="user">
-              <img src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo" alt="user" />
+              <img src="./images/telefono.svg" />
               <div class="user-info">
-                <h5>July Dec</h5>
-                <small>2h ago</small>
+                <h5>Instalamos Telefonía IP con Cableado Ethernet y Wi-Fi</h5>
               </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <img src="./images/amr-prin3.jpeg" alt="rover" />
+            <img src="./images/CamaraIP.png" alt="rover" />
           </div>
           <div class="card-body">
-            <span class="tag tag-teal">Technology</span>
-            <h4>
-              Why is the Tesla Cybertruck designed the way it
-              is?
-            </h4>
+            <span class="tag tag-teal">CCTV IP</span>
+          
+            <br>
             <p>
-              An exploration into the truck's polarising design
+              AMR ofrece equipos de vigilancia y monitoreo CCTV IP, incluyendo cámaras profesionales, domos controlados, NVR, trasmisores de video inalámbricos, lentes y más. Todos los equipos están 
+              disponibles para almacenamiento en la nube y en servidores de video en la web.
             </p>
             <div class="user">
-              <img src="https://yt3.ggpht.com/a/AGF-l7-0J1G0Ue0mcZMw-99kMeVuBmRxiPjyvIYONg=s900-c-k-c0xffffffff-no-rj-mo" alt="user" />
+              <img src="./images/camara.svg" />
               <div class="user-info">
-                <h5>July Dec</h5>
-                <small>2h ago</small>
+                <h5>Instalamos CCTV IP con Cableado Ethernet, Fibra Óptica o vía Wi-Fi</h5>
               </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <img src="./images/amr-prin3.jpeg" alt="rover" />
+            <img src="./images/TierraF.png" alt="rover" />
           </div>
           <div class="card-body">
-            <span class="tag tag-teal">Technology</span>
-            <h4>
-              Why is the Tesla Cybertruck designed the way it
-              is?
-            </h4>
+            <span class="tag tag-teal">Tierra física o sistemas de puesta a tierra</span>
+        
+            <br>
             <p>
-              An exploration into the truck's polarising design
+              Un Sistema de Puesta a Tierra es necesario para garantizar la correcta referencia 
+              a tierra de los elementos eléctricos. La importancia de la tierra física en las 
+              instalaciones eléctricas se debe a que este tercer conductor, conectado al suelo, 
+              proporciona seguridad y protección ante posibles cortocircuitos o fallas eléctricas. 
             </p>
             <div class="user">
-              <img src="./images/amr-prin3.jpeg" alt="user" />
+              <img src="./images/rayo.png" alt="user" />
               <div class="user-info">
-                <h5>July Dec</h5>
-                <small>2h ago</small>
+                <h5>Instalamos tierras fisicas adecuadas en Sites principales o cualquier
+                  IDF
+                </h5>
               </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <img src="./images/amr-prin3.jpeg" alt="ballons" />
+            <img src="./images/router.jpg" alt="ballons" />
           </div>
           <div class="card-body">
-            <span class="tag tag-purple">Popular</span>
-            <h4>
-              How to Keep Going When You Don’t Know What’s Next
-            </h4>
+            <span class="tag tag-purple">Firewalls / Routers</span>
+          
+            <br>
             <p>
-              The future can be scary, but there are ways to
-              deal with that fear.
+              En AMR sabemos lo que implica la seguridad de una red, ya que hoy en día
+              es primordial evitar ciberataques por medio de páginas web o descargas de 
+              programas maliciosos. Es por ello que los Firewalls y Routers realizan este
+              gran proceso para cualquier tipo de red, Indicar que los Firewalls de última
+              generación ya incluyen Routers.
             </p>
             <div class="user">
-              <img src="https://lh3.googleusercontent.com/ogw/ADGmqu8sn9zF15pW59JIYiLgx3PQ3EyZLFp5Zqao906l=s32-c-mo" alt="user" />
+              <img src="./images/wifi-router.png" alt="user" />
               <div class="user-info">
-                <h5>Eyup Ucmaz</h5>
-                <small>Yesterday</small>
+                <h5>Instalamos Firewalls y Routers totalmente Administrables de cualquier marca</h5>
               </div>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-header">
-            <img src="./images/amr-prin3.jpeg" alt="city" />
+            <img src="./images/switch2.jpg" alt="city" />
           </div>
           <div class="card-body">
-            <span class="tag tag-pink">Design</span>
-            <h4>
-              10 Rules of Dashboard Design
-            </h4>
+            <span class="tag tag-pink">Switches</span>
+            
+            <br>
             <p>
-              Dashboard Design Guidelines
+              En AMR reconocemos la importancia de la seguridad en la transmisión de 
+              datos en una red, por lo que ofrecemos soluciones para crear VLAN 
+              (redes de área local virtuales), una herramienta
+               muy útil para segmentar el tráfico de una red y mejorar su eficiencia y seguridad,
+               para proteger los datos sensibles de los empleados y los clientes.
             </p>
             <div class="user">
-              <img src="https://studyinbaltics.ee/wp-content/uploads/2020/03/3799Ffxy.jpg" alt="user" />
+              <img src="./images/switch.png" alt="user" />
               <div class="user-info">
-                <h5>Carrie Brewer</h5>
-                <small>1w ago</small>
+                <h5>Instalamos Switches desde Administrables y No Administrables y POE</h5>
               </div>
             </div>
           </div>
@@ -323,7 +345,7 @@
 
 <!-- ALIANZAS -->
 
-      <section class="testimony">
+      <section class="testimony" id="alianzas">
         <div class="testimony__container container">
           <img
             src="./images/leftarrow.svg"
@@ -334,81 +356,115 @@
           <section class="testimony__body testimony__body--show" data-id="1">
             <div class="testimony__texts">
               <h2 class="subtitle">
-                Bosch
+                Panduit
                 <span class="testimony__course">Alianza AMR-Integra</span>
               </h2>
               <p class="testimony__review">
-                El Grupo Bosch es un proveedor global líder de tecnología y
-                servicios. Emplea a aproximadamente 402,600 colaboradores en
-                todo el mundo. Utiliza su experiencia en tecnología de sensores,
-                software y servicios, así como su propia nube de IoT, para
-                ofrecer a sus clientes soluciones conectadas entre dominios
-                desde una sola fuente.
+                Panduit es un fabricante global de soluciones de infraestructura física con soluciones para sectores de energía, 
+                comunicaciones, informática, control y sistemas de seguridad. La empresa tiene una cobertura mundial de más de 4.000 
+                empleados, con el apoyo de más de 120 países. Fundada en 1955, Panduit tiene su sede en Tinley Park, Illinois, Estados Unidos.
               </p>
             </div>
 
             <figure class="testimony__picture">
-              <img src="./images/bosch.jpg" class="testimony__img" />
+              <img src="./images/Panduit.png" class="testimony__img" />
             </figure>
           </section>
 
-          <section class="testimony__body" data-id="2">
-            <div class="testimony__texts">
-              <h2 class="subtitle">
-                Alvarion
-                <span class="testimony__course">Alianza AMR-Integra</span>
-              </h2>
-              <p class="testimony__review">
-                Alvarion es una empresa israelí dedicada al suministro de
-                sistemas de banda ancha inalámbricos para compañías de
-                telecomunicaciones, ISP y operadores de redes privadas. Las
-                soluciones que provee cubren la totalidad de bandas de
-                frecuencia, esta provee soluciones principalmente para el acceso
-                en la última milla
-              </p>
-            </div>
 
-            <figure class="testimony__picture">
-              <img src="./images/alvarion.jpg" class="testimony__img" />
-            </figure>
-          </section>
+        <section class="testimony__body" data-id="2">
+          <div class="testimony__texts">
+            <h2 class="subtitle">
+              Bosch
+              <span class="testimony__course">Alianza AMR-Integra</span>
+            </h2>
+            <p class="testimony__review">
+              El Grupo Bosch es un proveedor global líder de tecnología y
+              servicios. Emplea a aproximadamente 402,600 colaboradores en
+              todo el mundo. Utiliza su experiencia en tecnología de sensores,
+              software y servicios, así como su propia nube de IoT, para
+              ofrecer a sus clientes soluciones conectadas entre dominios
+              desde una sola fuente.
+            </p>
+          </div>
 
-          <section class="testimony__body" data-id="3">
-            <div class="testimony__texts">
-              <h2 class="subtitle">
-                Cablofil
-                <span class="testimony__course">Alianza AMR-Integra</span>
-              </h2>
-              <p class="testimony__review">
-                CABLOFIL, LÍDER EN EL MERCADO E INVENTORES DEL SISTEMA TIPO
-                MALLA Expertos en direccionamiento y distribución de cableado
-                eléctrico, control y/o voz y datos.
-              </p>
-            </div>
+          <figure class="testimony__picture">
+            <img src="./images/bosch.jpg" class="testimony__img" />
+          </figure>
+        </section>
 
-            <figure class="testimony__picture">
-              <img src="./images/cablofil.png" class="testimony__img" />
-            </figure>
-          </section>
+        <section class="testimony__body" data-id="3">
+          <div class="testimony__texts">
+            <h2 class="subtitle">
+              Hikvision
+              <span class="testimony__course">Alianza AMR-Integra</span>
+            </h2>
+            <p class="testimony__review">
+              Hangzhou Hikvision Digital Technology Co., Ltd. , a menudo abreviado como Hikvision , 
+              es un fabricante y proveedor estatal chino de equipos de videovigilancia para fines 
+              civiles y militares, con sede en Hangzhou, Zhejiang .
+            </p>
+          </div>
 
-          <section class="testimony__body" data-id="4">
-            <div class="testimony__texts">
-              <h2 class="subtitle">
-                CISCO,
-                <span class="testimony__course">Alianzas</span>
-              </h2>
-              <p class="testimony__review">
-                Cisco Systems es una empresa global con sede en San José, ​
-                California, Estados Unidos, principalmente dedicada a la
-                fabricación, venta, mantenimiento y consultoría de equipos de
-                telecomunicaciones.
-              </p>
-            </div>
+          <figure class="testimony__picture">
+            <img src="./images/hikvision.jpg" class="testimony__img" />
+          </figure>
+        </section>
 
-            <figure class="testimony__picture">
-              <img src="./images/cisco2.jpg" class="testimony__img" />
-            </figure>
-          </section>
+        <section class="testimony__body" data-id="4">
+          <div class="testimony__texts">
+            <h2 class="subtitle">
+              Cablofil
+              <span class="testimony__course">Alianza AMR-Integra</span>
+            </h2>
+            <p class="testimony__review">
+              CABLOFIL, LÍDER EN EL MERCADO E INVENTORES DEL SISTEMA TIPO
+              MALLA Expertos en direccionamiento y distribución de cableado
+              eléctrico, control y/o voz y datos.
+            </p>
+          </div>
+
+          <figure class="testimony__picture">
+            <img src="./images/cablofil.png" class="testimony__img" />
+          </figure>
+        </section>
+
+        <section class="testimony__body" data-id="5">
+          <div class="testimony__texts">
+            <h2 class="subtitle">
+              CISCO
+              <span class="testimony__course">Alianza AMR-Integra</span>
+            </h2>
+            <p class="testimony__review">
+              Cisco Systems es una empresa global con sede en San José, ​
+              California, Estados Unidos, principalmente dedicada a la
+              fabricación, venta, mantenimiento y consultoría de equipos de
+              telecomunicaciones.
+            </p>
+          </div>
+
+          <figure class="testimony__picture">
+            <img src="./images/cisco2.jpg" class="testimony__img" />
+          </figure>
+        </section>
+
+        <section class="testimony__body" data-id="6">
+          <div class="testimony__texts">
+            <h2 class="subtitle">
+              Cambium Networks
+              <span class="testimony__course">Alianza AMR-Integra</span>
+            </h2>
+            <p class="testimony__review">
+              Cambium Networks es un proveedor global líder de infraestructura de tejido 
+              inalámbrico para Wi-Fi y banda ancha comercial y residencial. Colaboramos y 
+              servimos a operadores de red en educación, salud, campus industriales y municipios, 
+              y capacitamos a nuestros socios para maximizar económicamente el rendimiento de banda ancha y Wi-Fi
+          </div>
+
+          <figure class="testimony__picture">
+            <img src="./images/Cambium.png" class="testimony__img" />
+          </figure>
+        </section>
 
           <img
             src="./images/rightarrow.svg"
@@ -419,31 +475,40 @@
       </section>
 
       <section class="questions container">
+        <center><img src="./images/AMR_INTEGRA1.png" alt="Image" height="70" width="190" /></center><br><br>
         <h2 class="subtitle">Preguntas frecuentes</h2>
         <p class="questions__paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
-          doloribus neque perspiciatis sapiente fuga.
+          <h3>Para nosotros, lo más importante es usted. </h3>
         </p>
 
         <section class="questions__container">
           <article class="questions__padding">
             <div class="questions__answer">
               <h3 class="questions__title">
-                ¿pregunta 1?
+                ¿En donde puedo pedir alguna cotización?
                 <span class="questions__arrow">
                   <img src="./images/arrow.svg" class="questions__img" />
                 </span>
               </h3>
 
               <p class="questions__show">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                facere, quidem eum id excepturi assumenda explicabo nam
-                accusamus veritatis voluptates eveniet adipisci, dicta nihil
-                nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                amet consectetur adipisicing elit. Quos facere, quidem eum id
-                excepturi assumenda explicabo nam accusamus veritatis voluptates
-                eveniet adipisci, dicta nihil nemo modi possimus officiis quam
-                atque?
+                En nuestro número de Whatsapp o a nuestro correo: 
+                clientes@amr-integra.com.mx  - Será un gusto atenderle.
+                </p>
+            </div>
+          </article>
+
+          <article class="questions__padding">
+            <div class="questions__answer">
+              <h3 class="questions__title">
+                ¿Realizan trabajos a casa habitación o residencias?
+                <span class="questions__arrow">
+                  <img src="./images/arrow.svg" class="questions__img" />
+                </span>
+              </h3>
+
+              <p class="questions__show">
+                Así es, ahora con las nuevas tecnologías de IoT (internet of Things), como lo es el CCTV IP, estamos a la orden para cualquier proyecto. - Será un gusto atenderle.
               </p>
             </div>
           </article>
@@ -451,57 +516,26 @@
           <article class="questions__padding">
             <div class="questions__answer">
               <h3 class="questions__title">
-                ¿pregunta 2?
+                ¿Atienden en cualquier parte de la República Mexicana?
                 <span class="questions__arrow">
                   <img src="./images/arrow.svg" class="questions__img" />
                 </span>
               </h3>
 
               <p class="questions__show">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                facere, quidem eum id excepturi assumenda explicabo nam
-                accusamus veritatis voluptates eveniet adipisci, dicta nihil
-                nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                amet consectetur adipisicing elit. Quos facere, quidem eum id
-                excepturi assumenda explicabo nam accusamus veritatis voluptates
-                eveniet adipisci, dicta nihil nemo modi possimus officiis quam
-                atque?
-              </p>
-            </div>
-          </article>
-
-          <article class="questions__padding">
-            <div class="questions__answer">
-              <h3 class="questions__title">
-                ¿pregunta 3?
-                <span class="questions__arrow">
-                  <img src="./images/arrow.svg" class="questions__img" />
-                </span>
-              </h3>
-
-              <p class="questions__show">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                facere, quidem eum id excepturi assumenda explicabo nam
-                accusamus veritatis voluptates eveniet adipisci, dicta nihil
-                nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
-                amet consectetur adipisicing elit. Quos facere, quidem eum id
-                excepturi assumenda explicabo nam accusamus veritatis voluptates
-                eveniet adipisci, dicta nihil nemo modi possimus officiis quam
-                atque?
+                Así es, ya que AMR - Integra a realizado trabajo en la mayoria de los Estados de la República Mexicana. - Será un gusto atenderle.
               </p>
             </div>
           </article>
         </section>
 
-        <section class="questions__offer">
+        <section class="questions__offer" id="contacto">
           <h2 class="subtitle">¿No te ha convencido?</h2>
           <p class="questions__copy">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
-            ratione architecto magnam, officiis ex porro vero est voluptates
-            quaerat quibusdam illo veniam reprehenderit eius atque tempora iure
-            ab non autem.
+            Sientase con toda confianza para aclararle cualquier duda al siguiente correo:
+            <h3>aclaraciones@amr-integra.com.mx</h3><br>
           </p>
-          <a href="#" class="cta">boton1</a>
+          <a href="mailto:aclaraciones@amr-integra.com.mx" class="cta">Enviar correo</a>
         </section>
       </section>
     </main>
@@ -509,25 +543,22 @@
     <footer class="footer">
       <section class="footer__container container">
         <nav class="nav nav--footer">
-          <h2 class="footer__title">AMR - Integra.</h2>
-
+          <h2 class="footer__title">Tecnología con Sentido</h2>
           <ul class="nav__link nav__link--footer">
             <li class="nav__items">
               <a href="#" class="nav__links">Inicio</a>
             </li>
             <li class="nav__items">
-              <a href="#" class="nav__links">Acerca de</a>
+              <a href="./LAN/index_lan.html" class="nav__links">¿Qué es una LAN?</a>
             </li>
             <li class="nav__items">
-              <a href="#" class="nav__links">Contacto</a>
+              <a href="mailto:clientes@amr-integra.com.mx" class="nav__links">Cotizaciones</a>
             </li>
-            <li class="nav__items">
-              <a href="#" class="nav__links">Blog</a>
-            </li>
+            <p class="tel-footer">Tel: 3317751432</p>
           </ul>
         </nav>
-
-        <form
+        <img src="./images/AMR_INTEGRA1.png" class="AMR-footer" alt="">
+        <!-- <form
           class="footer__form"
           action="https://formspree.io/f/mknkkrkj"
           method="POST"
@@ -542,7 +573,7 @@
             />
             <input type="submit" value="Registrate" class="footer__submit" />
           </div>
-        </form>
+        </form> -->
       </section>
 
       <section class="footer__copy container">
@@ -564,8 +595,9 @@
       </section>
     </footer>
 
-    <script src="./js/slider.js"></script>
-    <script src="./js/questions.js"></script>
-    <script src="./js/menu.js"></script>
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/questions.js"></script>
+    <script defer src="./js/menu.js"></script>
+    <script defer src="./js/arrow.js"></script>
   </body>
 </html>
